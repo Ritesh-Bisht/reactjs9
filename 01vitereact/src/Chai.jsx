@@ -7,12 +7,3 @@ function Ch(){
     )
 }
 export default Ch
-export function App() {
-  return (
-    <>
-      <Ch />
-      <h1>CHAI AUR REACT</h1>
-      <p>TEST PARA</p>
-    </>
-  )
-}
