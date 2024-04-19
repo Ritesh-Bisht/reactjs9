@@ -1,7 +1,12 @@
+import Ch from "./Chai"
 
 function App() {
   return (
-  <h1> chai or react with vite | rb </h1>
+  <>
+  <Ch/>
+  <h1>CHAI AUR REACT</h1>
+  <p>TEST PARA</p>
+  </>
   )
 }
 
