@@ -1,4 +1,5 @@
-import Ch from "./Chai"
+import Ch from "./Chai9"
+
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
   <h1>CHAI AUR REACT</h1>
   <p>TEST PARA</p>
   </>
+
   )
 }
 
