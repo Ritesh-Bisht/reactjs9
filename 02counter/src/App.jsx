@@ -5,17 +5,21 @@ import './App.css'
 
 function App() {
 
-  let [counter, setCounter] = useState(15)
+  const [counter, setCounter] = useState(15)
 
  // let counter =15 
   const addValue = ()=>{
     console.log('Value Added',counter);
-     counter++;
-    setCounter(counter)
+    // counter++;
+    setCounter((prevcounter) => prevcounter+1);
+    setCounter((prevcounter) => prevcounter+1);
+    setCounter(prevcounter => prevcounter+1 );
+    setCounter(prevcounter => prevcounter+1 );
+    setCounter(prevcounter => prevcounter+1 );
   }
   const removeValue = () => {
-    counter--;
-    setCounter(counter)
+   // counter--;
+    setCounter(counter-1)
   
     
   }
