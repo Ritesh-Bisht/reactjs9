@@ -8,7 +8,6 @@ export const TodoContext= createContext({
             completed:false
         },
         {
-            theme:dark
         },
         {
         },
