@@ -24,7 +24,8 @@ export class AuthService {
 
             if(userAccount){
                 // call another method
-
+                // if user exist then login method call 
+                return this.login({email,name,ID})
             }
             else{
                 return userAccount;
@@ -36,12 +37,35 @@ export class AuthService {
 
     async login(email, password) {
         try{
-            await this.account.createEmailPasswordSession(email, password);
+            return await this.account.createEmailPasswordSession(email, password);
 
         }
         catch(error){
             return error;
 
+        }
+    }
+    
+
+    async getCurrentUser(){
+        try {
+            return await this.account.get();
+        } catch (error) {
+            console.log("APPWRITE SERVICE :: getCurrenytUser :: error", error);
+        }
+        return null;
+    }
+
+    async logout(){
+        try {
+            await this.account.deleteSessions()
+           // await this.account.deleteSession('current') for 1 session
+
+            
+            
+        } catch (error) {
+            console.log("APPWRITE SERVICE :: getCurrenytUser :: error", error);
+            
         }
     }
 
