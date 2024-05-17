@@ -34,4 +34,5 @@ function App() {
     </div>
   ) : null
 }
-export default App
+
+export default App;
